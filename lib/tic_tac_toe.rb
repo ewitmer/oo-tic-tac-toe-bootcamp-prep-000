@@ -80,7 +80,12 @@ class TicTacToe
       end
     end
     return false
-  
-    
   end
+  
+  def full?
+    @board.all? do |number|
+      number != " "
+    end
+  end
+  
 end
