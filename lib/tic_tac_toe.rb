@@ -104,12 +104,12 @@ class TicTacToe
     end
   end
   
-  def winner(board)
-    if won?(board) == false 
+  def winner
+    if won? == false 
       return nil
     else 
-      combo = won?(board)
-      return board[combo[0]]
+      combo = won?
+      return @board[combo[0]]
     end
   end
 end
